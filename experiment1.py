@@ -35,7 +35,7 @@ def hill_climbing(n_episodes=10000, gamma=0.99, noise_scale=1e-2):
     scores_deque = deque(maxlen=100)
     scores = []
     arr_noise = []
-    best_Gt = -np.Inf
+    best_Gt = -np.inf
     best_w = policy.w
     for i_episode in range(1, n_episodes+1):
         rewards = []
