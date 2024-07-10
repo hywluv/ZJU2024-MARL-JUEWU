@@ -1,2 +1,4 @@
 .DS_Store
 __pycache__/
+Lab5/tensorboard/
+Lab5/trained_models/
