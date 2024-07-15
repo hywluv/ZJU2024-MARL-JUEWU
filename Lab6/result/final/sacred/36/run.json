@@ -1,0 +1,116 @@
+{
+  "artifacts": [],
+  "command": "my_main",
+  "experiment": {
+    "base_dir": "D:\\Code\\24Sum_MARL\\ZJU2024-MARL-JUEWU\\Lab6\\pymarl\\src",
+    "dependencies": [
+      "numpy==1.24.1",
+      "PyYAML==6.0.1",
+      "sacred==0.8.5",
+      "torch==2.3.1+cu121"
+    ],
+    "mainfile": "main.py",
+    "name": "pymarl",
+    "repositories": [
+      {
+        "commit": "c971afdceb34635d31b778021b0ef90d7af51e86",
+        "dirty": true,
+        "url": "https://github.com/oxwhirl/pymarl.git"
+      },
+      {
+        "commit": "c971afdceb34635d31b778021b0ef90d7af51e86",
+        "dirty": true,
+        "url": "https://github.com/oxwhirl/pymarl.git"
+      },
+      {
+        "commit": "c971afdceb34635d31b778021b0ef90d7af51e86",
+        "dirty": true,
+        "url": "https://github.com/oxwhirl/pymarl.git"
+      }
+    ],
+    "sources": [
+      [
+        "main.py",
+        "_sources\\main_d44e98a72ffd6dd630bf6af4835dea5f.py"
+      ],
+      [
+        "run.py",
+        "_sources\\run_b0aaad29119fb7a2d25dd2f9c859d27e.py"
+      ],
+      [
+        "utils\\logging.py",
+        "_sources\\logging_b0277773964fc75c1060bdfa73d23ffb.py"
+      ]
+    ]
+  },
+  "fail_trace": [
+    "Traceback (most recent call last):\n",
+    "  File \"C:\\Users\\Starrism\\AppData\\Roaming\\Python\\Python38\\site-packages\\sacred\\config\\captured_function.py\", line 42, in captured_function\n    result = wrapped(*args, **kwargs)\n",
+    "  File \"src/main.py\", line 35, in my_main\n    run(_run, config, _log)\n",
+    "  File \"D:\\Code\\24Sum_MARL\\ZJU2024-MARL-JUEWU\\Lab6\\pymarl\\src\\run.py\", line 63, in run\n    os._exit(os.EX_OK)\n",
+    "AttributeError: module 'os' has no attribute 'EX_OK'\n"
+  ],
+  "heartbeat": "2024-07-13T08:30:14.863125",
+  "host": {
+    "ENV": {},
+    "cpu": "12th Gen Intel(R) Core(TM) i7-12700H",
+    "gpus": {
+      "driver_version": "556.12",
+      "gpus": [
+        {
+          "model": "NVIDIA GeForce RTX 3070 Ti Laptop GPU",
+          "persistence_mode": false,
+          "total_memory": 8192
+        }
+      ]
+    },
+    "hostname": "MSI",
+    "os": [
+      "Windows",
+      "Windows-10-10.0.22000-SP0"
+    ],
+    "python_version": "3.8.19"
+  },
+  "meta": {
+    "command": "my_main",
+    "config_updates": {
+      "env_args": {
+        "map_name": "5m_vs_6m"
+      }
+    },
+    "named_configs": [],
+    "options": {
+      "--beat-interval": null,
+      "--capture": null,
+      "--comment": null,
+      "--debug": false,
+      "--enforce_clean": false,
+      "--file_storage": null,
+      "--force": false,
+      "--help": false,
+      "--id": null,
+      "--loglevel": null,
+      "--mongo_db": null,
+      "--name": null,
+      "--pdb": false,
+      "--print-config": false,
+      "--priority": null,
+      "--queue": false,
+      "--s3": null,
+      "--sql": null,
+      "--tiny_db": null,
+      "--unobserved": false,
+      "COMMAND": null,
+      "UPDATE": [
+        "env_args.map_name=5m_vs_6m"
+      ],
+      "help": false,
+      "with": true
+    }
+  },
+  "resources": [],
+  "result": null,
+  "start_time": "2024-07-13T05:59:50.883859",
+  "status": "FAILED",
+  "stop_time": "2024-07-13T08:30:14.887121"
+}

@@ -1,0 +1,40 @@
+action_selector: "epsilon_greedy"
+epsilon_start: 1.0
+epsilon_finish: 0.05
+epsilon_anneal_time: 100000
+
+runner: "parallel"
+batch_size_run: 8
+buffer_size: 5000 
+batch_size: 128
+optimizer: 'adam'
+
+t_max: 10050000
+
+target_update_interval: 200
+
+mac: "n_mac"
+agent: "n_rnn"
+agent_output_type: q
+
+learner: "nq_learner"
+mixer: "qmix"
+mixing_embed_dim: 32
+hypernet_embed: 64
+lr: 0.0005
+td_lambda: 0.6
+optimizer: 'adam'
+q_lambda: False
+
+
+use_layer_norm: False
+
+use_orthogonal: False
+gain: 0.01
+
+use_per: False
+per_alpha: 0.6
+per_beta: 0.4
+return_priority: False
+
+name: "qmix_env=8_adam_td_lambda"
